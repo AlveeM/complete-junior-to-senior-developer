@@ -21,7 +21,7 @@ let wizard: object = {
 let meh: undefined = undefined;
 let no: null = null;
 
-// typle
+// tuple
 let basket: [string, number];
 basket = ['basketball', 5];
 
@@ -50,7 +50,7 @@ let error = (): never => {
 interface RobotArmy {
     count: number,
     type: string,
-    magic: string
+    magic?: string // ? indicates optional property
 }
 
 // type RobotArmy = {
