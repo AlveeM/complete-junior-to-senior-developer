@@ -15,7 +15,7 @@ var wizard = {
 // null and undefined
 var meh = undefined;
 var no = null;
-// typle
+// tuple
 var basket;
 basket = ['basketball', 5];
 // enum
@@ -52,3 +52,29 @@ var fightRobotArmy = function (robots) {
 var fightRobotArmy2 = function (robots) {
     console.log('FIGHT!');
 };
+// function
+var fightRobotArmy3 = function (robots) {
+    console.log('FIGHT!');
+};
+var fightRobotArmy4 = function (robots) {
+    console.log('FIGHT!');
+    return 5;
+};
+//  classes
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        this.sing = 'lalalala';
+        this.sing = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "Hello, {this.sing}";
+    };
+    return Animal;
+}());
+var lion = new Animal('RAAAWWR');
+lion.greet();
+// union
+var confused = "hello";
+// type inference
+var x = 4;
+x = 'hello';
