@@ -66,3 +66,28 @@ let fightRobotArmy = (robots: RobotArmy) => {
 let fightRobotArmy2 = (robots: {count: number, type: string, magic: string}) => {
     console.log('FIGHT!');
 }
+
+// function
+let fightRobotArmy3 = (robots: RobotArmy):void => {
+    console.log('FIGHT!');
+}
+
+let fightRobotArmy4 = (robots: {count: number, type: string, magic: string}): number => {
+    console.log('FIGHT!');
+    return 5;
+}
+
+//  classes
+class Animal {
+    private sing: string = 'lalalala';
+    constructor(sound: string) {
+        this.sing = sound;
+    }
+
+    greet() {
+        return `Hello, {this.sing}`;
+    }
+}
+
+let lion = new Animal('RAAAWWR');
+lion.greet();
